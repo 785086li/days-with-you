@@ -3,64 +3,27 @@
 const STORAGE_KEY = "days-with-you:data:v1";
 const SESSION_KEY = "days-with-you:unlocked";
 const DEFAULT_AUTH = {
-  salt: "33274a9f17d7779804e1a1ff6d698170",
-  hash: "eb3c8c376fa2a9578bc13feb9256de5c11028f52d17cd4398668a3f7a900165e",
-  iterations: 120000,
+  salt: "f72d4ce4fdf4db1f807c7732ecadca52",
+  hash: "4ba76431e25ef53791a38a0e8893416ebd5c7b73aa11787f810bce69d5276bb7",
+  iterations: 120000
 };
 
 const DEFAULT_PROFILE = {
   siteName: "DAYS WITH YOU",
-  displayName: "亲爱的你",
+  displayName: "亲爱的蛋",
   kicker: "A LITTLE UNIVERSE FOR YOU",
   heroTitle: "把每一个普通日子，\n都过成纪念日。",
-  heroDescription:
-    "时间一直向前走，而我想把与你有关的日子，认真收藏在这里。",
+  heroDescription: "时间一直向前走，而我想把与你有关的日子，认真收藏在这里。",
   aboutTitle: "你是所有浪漫的\n标准答案。",
-  aboutText:
-    "这个网站没有宏大的故事，只有一些舍不得忘记的小事。\n想告诉你：无论日子过得快还是慢，我都会认真地站在你这一边。",
+  aboutText: "这个网站没有宏大的故事，只有一些舍不得忘记的小事。\n想告诉蛋蛋：无论日子过得快还是慢，我都会认真地站在你这一边。"
 };
 
 const DEFAULT_EVENTS = [
-  {
-    id: "together",
-    title: "在一起",
-    note: "从那一天开始，平凡的日子有了专属的意义。",
-    target: "2025-05-20T20:00",
-    mode: "elapsed",
-    annual: false,
-    featured: false,
-    color: "rose",
-  },
-  {
-    id: "next-meeting",
-    title: "下一次见面",
-    note: "提前开始期待，连等待也变成了甜甜的事。",
-    target: "2026-11-15T18:30",
-    mode: "countdown",
-    annual: false,
-    featured: true,
-    color: "coral",
-  },
-  {
-    id: "birthday",
-    title: "你的生日",
-    note: "希望每一年的这一天，都有新的快乐如约而至。",
-    target: "2027-03-12T00:00",
-    mode: "countdown",
-    annual: true,
-    featured: false,
-    color: "lilac",
-  },
-  {
-    id: "first-trip",
-    title: "第一次一起出发",
-    note: "去吹海风，看日落，把远方也写进我们的故事。",
-    target: "2027-07-08T08:00",
-    mode: "countdown",
-    annual: false,
-    featured: false,
-    color: "sage",
-  },
+  { "id": "36bcb316-bfde-42d1-acbf-12152334bce8", "title": "相识", "note": "慢踩离合~", "target": "2023-07-31T10:00", "mode": "elapsed", "annual": false, "featured": false, "color": "rose" },
+  { "id": "together", "title": "相恋", "note": "从那一天开始，平凡的日子有了专属的意义。", "target": "2025-02-20T21:21", "mode": "elapsed", "annual": false, "featured": false, "color": "coral" },
+  { "id": "next-meeting", "title": "下一次见面", "note": "提前开始期待，连等待也变成了甜甜的事。", "target": "2026-12-20T17:21", "mode": "countdown", "annual": false, "featured": false, "color": "sage" },
+  { "id": "birthday", "title": "蛋蛋破壳日", "note": "希望每一年的这一天，都有新的快乐如约而至。", "target": "2026-11-15T00:00", "mode": "countdown", "annual": true, "featured": true, "color": "coral" },
+  { "id": "first-trip", "title": "安安诞辰", "note": "去吹海风，看日落，把远方也写进我们的故事。", "target": "2027-01-06T00:00", "mode": "countdown", "annual": true, "featured": false, "color": "lilac" }
 ];
 
 const COLOR_VALUES = {
