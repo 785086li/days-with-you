@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap:https://785086li.github.io/days-with-you/
+Sitemap: https://785086li.github.io/days-with-you/sitemap.xml
